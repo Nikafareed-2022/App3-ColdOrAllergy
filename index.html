@@ -50,6 +50,8 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
             cold_count = cold_count + 1;
         }
 
+	var resultText = document.getElementById("results");
+	
   </script>
 
 
@@ -178,7 +180,15 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		<a href="#seven" onclick="allergyAdd();" class="w3-btn w3-blue w3-hover-indigo w3-round-xlarge w3-padding-large"> No </a>
 	
 	</div>
-		
+	
+<div class="page" id="seven">
+	<div class="w3-container w3-blue">
+		<h1>Results</h1>
+	</div>
+	
+<div id="content" class="w3-container">
+		<p id="results"> resultText.innerHTML = "Probability it is allergies =" + allergyPercent + "<br> Probability it is a cold =" + coldPercent; </p>
+	
 <footer class="w3-bottom w3-container w3-blue">
 	<p>Now you know if your symptoms are more like cold or flu! Feel better soon!</p>
 </footer>
