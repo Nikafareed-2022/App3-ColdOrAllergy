@@ -49,7 +49,9 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
         function coldAdd(){
             cold_count = cold_count + 1;
         }
-	
+	/* Add Function and variables for results page
+	the code will use the equation to calculate the input answers 
+	it will calulate by dividing the points assigned to either allergy or cold by the total number of points available */
 	function resultsAdd(){
 		var resultText = document.getElementById("results");
 		var allergyPercent = (allergy_count/(allergy_count + cold_count)) * 100;
